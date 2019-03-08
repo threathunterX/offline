@@ -1,0 +1,182 @@
+[
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1609554158776,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">100, avg < 0.8, in 5m, web",
+    "name": "strategy_0",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 10,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意注册"
+    ],
+    "app": "nebula",
+    "expire": 1609554158776,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">100, avg < 0.8, in 5m, web",
+    "name": "strategy_1",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 10,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">5 in 30min",
+    "name": "strategy_2",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 20,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "SQL注入"
+    ],
+    "app": "nebula",
+    "expire": 1543029329330,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数中包含SQL语句特征",
+    "name": "strategy_3",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 40,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, product_id",
+    "name": "strategy_4",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 20,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 10min F",
+    "name": "strategy_5",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 10,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "下单不支付"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">4 in 30min no pay",
+    "name": "strategy_6",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 10,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一访问"
+    ],
+    "app": "nebula",
+    "expire": 1625023169000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">20 , < 5页面 in 5m",
+    "name": "strategy_7",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 20,
+    "checktype": "IP",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5min",
+    "name": "strategy_8",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 20,
+    "checktype": "DeviceID",
+    "test": false,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "异地登录"
+    ],
+    "app": "nebula",
+    "expire": 1609664566697,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">4, <0.2",
+    "name": "strategy_9",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 10,
+    "checktype": "USER",
+    "test": false,
+    "scope": "profile"
+  }
+]

@@ -1,0 +1,3389 @@
+[
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672454699088,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">5 in 5m 不需要解析 login",
+    "name": "IP大量请求登录接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "dashboard"
+    ],
+    "app": "nebula",
+    "expire": 7584324242490,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单profile_UID过去一小时下单成功数>=2",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "profile"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_mobile",
+    "name": "IP多次请求下单__不同手机号",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, product_id",
+    "name": "设备多次请求下单__同一商品",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1609553885794,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">10 in 5m, 不包含404",
+    "name": "IP大量4XX返回",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1609553885794,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">10 in 5m",
+    "name": "IP大量404返回",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 in 5m",
+    "name": "用户多次请求注册",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 in 10min T",
+    "name": "用户多次登录失败",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_city ",
+    "name": "IP多次请求下单__不同城市",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊下单"
+    ],
+    "app": "nebula",
+    "expire": 1672468664362,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">3 order, F=1 in 5m",
+    "name": "用户高频请求下单__全部失败5m",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID取消订单请求数[5m]>3",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID5分钟内下单失败总次数>3",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 ，页面<=4 in 30min",
+    "name": "设备集中请求登录",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "邀请注册"
+    ],
+    "app": "nebula",
+    "expire": 1609667608438,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 register_count, same register_channel in 5m",
+    "name": "设备使用相同邀请码注册5m",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641120013785,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "IP关联多个用户",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "ngx_lua_waf"
+    ],
+    "app": "nebula",
+    "expire": 1511946643357,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET参数中ngx_lua_waf策略补充",
+    "name": "visit_ngx_lua_waf_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, user_name",
+    "name": "用户多次请求下单__不同收货人",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_city ",
+    "name": "用户多次请求下单__不同城市",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID下单不同商户城市数[5m]>3",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 10min T",
+    "name": "设备多次登录成功",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略"
+    ],
+    "app": "nebula",
+    "expire": 7587418486895,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "TRANSACTION",
+    "remark": "",
+    "name": "支付_UID5分钟内不同支付渠道个数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1641091020091,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">100 in 5m",
+    "name": "IP大量动态请求",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊UA"
+    ],
+    "app": "nebula",
+    "expire": 1630565831241,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "java",
+    "name": "Java 用户代理",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">1 ip in 30min",
+    "name": "用户多设备请求下单",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3 用户 in 30min",
+    "name": "IP多用户请求下单",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672454699088,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">5 in 5m 不需要解析 sign",
+    "name": "IP大量请求签到接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1572589588503,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "> 5 动态+静态 ,404 .asp",
+    "name": "IP访问.asp文件",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "SQL注入"
+    ],
+    "app": "nebula",
+    "expire": 1511667864319,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET请求中包含SQL的符号",
+    "name": "visit_sql_injection_hardcore_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "邀请注册"
+    ],
+    "app": "nebula",
+    "expire": 1609667608438,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 register_count, same register_channel in 5m",
+    "name": "IP使用相同邀请码注册5m",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627812910000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "register, no xxx in 5m",
+    "name": "IP请求注册前未访问必要资源",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_mobile",
+    "name": "用户多次请求下单__不同手机号",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1672480924640,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3, 1密码 in 5m",
+    "name": "IP多次使用相同密码注册",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 30m, 动态<=4",
+    "name": "设备集中请求注册接口",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID下单不同商户数[5m]>2",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 10min F",
+    "name": "设备多次登录失败",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1593502751000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">50, 1 页面, 1UA",
+    "name": "IP相同UA大量请求单个页面",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">1 用户 in 30min",
+    "name": "设备多用户请求下单",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_address_city",
+    "name": "设备多次请求下单__同一城市",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, merchant",
+    "name": "设备多次请求下单__不同商户",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1609554158776,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">100, avg < 0.8, in 5m, web",
+    "name": "IP页面停留时间过短Web",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">5 in 30min",
+    "name": "IP多次请求下单",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID下单不同收货城市数[5m]>3",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "SQL注入"
+    ],
+    "app": "nebula",
+    "expire": 1543029329330,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数中包含SQL语句特征",
+    "name": "visit_sql_injection_post_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, product_id",
+    "name": "IP多次请求下单__不同商品",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 10min F",
+    "name": "IP多次登录失败",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "下单不支付"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">4 in 30min no pay",
+    "name": "IP下单不支付",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_用户下单成功数[5m] >3",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一访问"
+    ],
+    "app": "nebula",
+    "expire": 1625023169000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">20 , < 5页面 in 5m",
+    "name": "IP集中请求部分接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5min",
+    "name": "设备多次请求登录",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 ip in 10m",
+    "name": "设备在多个IP请求注册",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, merchant",
+    "name": "IP多次请求下单__不同商户",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount<= 100",
+    "name": "IP多次请求下单__金额较低",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 ，页面<=4 in 30min",
+    "name": "IP集中请求登录",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "目录遍历"
+    ],
+    "app": "nebula",
+    "expire": 1543389374110,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET参数中包含目录遍历的特征",
+    "name": "visit_directory_traversal_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "午夜下单"
+    ],
+    "app": "nebula",
+    "expire": 1609569979438,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2,000, 0~6",
+    "name": "用户深夜请求下单金额过大",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "目录遍历"
+    ],
+    "app": "nebula",
+    "expire": 1543389630594,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数中包含目录遍历的特征",
+    "name": "visit_directory_traversal_post_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3, <=4页面 in 30min",
+    "name": "用户请求下单行为单一",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_city ",
+    "name": "设备多次请求下单__不同城市",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_address_city ",
+    "name": "用户多次请求下单__同一城市",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_detail",
+    "name": "设备多次请求下单__不同地址",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_address_detail",
+    "name": "用户多次请求下单__同一地址",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627799928000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "延迟判断 5m",
+    "name": "设备请求A一段时间内没有请求B",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签",
+      "profile策略"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单profile_UID过去一小时取消订单数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "profile"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672454699088,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">5 in 5m 不需要解析 register",
+    "name": "IP大量请求注册接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2, 1密码 in 10min",
+    "name": "用户相同密码请求登录",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略"
+    ],
+    "app": "nebula",
+    "expire": 7587418486895,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "TRANSACTION",
+    "remark": "",
+    "name": "支付_UID5分钟内平均支付成功金额",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, order_money_amount",
+    "name": "用户多次请求下单__不同金额",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "取消订单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3 in 30min distinct orderid",
+    "name": "IP多次取消订单",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, user_name",
+    "name": "IP多次请求下单__不同收货人",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5设备 in 5min",
+    "name": "设备在多个IP请求登录",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_address_detail",
+    "name": "IP多次请求下单__同一地址",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "ngx_lua_waf"
+    ],
+    "app": "nebula",
+    "expire": 1543398183037,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数中ngx_lua_waf策略补充",
+    "name": "visit_ngx_lua_waf_post_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单profile_用户过去一小时下单不同酒店城市数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "profile"
+  },
+  {
+    "tags": [
+      "单一访问"
+    ],
+    "app": "nebula",
+    "expire": 1641091136886,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">10 , 页面=1",
+    "name": "IP大量请求单个接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 uid in 10m",
+    "name": "设备多个用户请求注册",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_mobile",
+    "name": "设备多次请求下单__不同手机号",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, user_name",
+    "name": "设备多次请求下单__不同收货人",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641120013785,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "IP关联多个设备",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, product_id",
+    "name": "设备多次请求下单__不同商品",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3, <=4页面 in 30min",
+    "name": "设备请求下单行为单一",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 1,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 in 5min",
+    "name": "IP相同密码请求登录不同账号",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊下单"
+    ],
+    "app": "nebula",
+    "expire": 1641026203555,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 5m, merchant",
+    "name": "用户高频请求下单__同一商户5m",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊下单"
+    ],
+    "app": "nebula",
+    "expire": 1704528330197,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">3 cancel in 5m",
+    "name": "用户高频请求取消订单5m",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672543086878,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">30 in 5m",
+    "name": "IP大量连续POST请求",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641120013785,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "用户关联多个IP",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊UA"
+    ],
+    "app": "nebula",
+    "expire": 1630565831241,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "spider",
+    "name": "Spider 用户代理",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      ""
+    ],
+    "app": "nebula",
+    "expire": 1509076867000,
+    "checkpoints": "",
+    "ttl": 18000,
+    "category": "VISITOR",
+    "remark": "地域function测试策略",
+    "name": "测试-地域FUNCTION",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, merchant",
+    "name": "设备多次请求下单__同一商户",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, user_name",
+    "name": "设备多次请求下单__同收货人",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount<= 100",
+    "name": "设备多次请求下单__金额较低",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 uid in 10m",
+    "name": "IP多个用户请求注册",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">10 in 5m",
+    "name": "IP多次请求注册",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_mobile",
+    "name": "用户多次请求下单__同手机号",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_detail",
+    "name": "用户多次请求下单__不同地址",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "取消订单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3 in 30min distinct orderid",
+    "name": "用户多次取消订单",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1609554158776,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">100, avg < 0.5, in 5m, web",
+    "name": "IP页面停留时间过短App",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, receiver_address_detail",
+    "name": "IP多次请求下单__不同地址",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627812910000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "register, no xxx in 5m",
+    "name": "设备请求注册前未访问必要资源",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5min",
+    "name": "设备换密码请求登录单账号",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 ip in 10m",
+    "name": "用户在多个设备请求注册",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 ip in 10min",
+    "name": "用户在多个IP请求登录",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 in 10min T",
+    "name": "用户多次登录成功",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount > 100",
+    "name": "IP多次请求下单__金额较高",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "RFI"
+    ],
+    "app": "nebula",
+    "expire": 1543377535967,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数中包含rfi远程文件包含的特征",
+    "name": "visit_rfi_post_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5min",
+    "name": "IP多次请求登录",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3, <=4页面 in 30min",
+    "name": "IP请求下单行为单一",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, user_name",
+    "name": "用户多次请求下单__同收货人",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, order_money_amount",
+    "name": "设备多次请求下单__不同金额",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">10 in 5m",
+    "name": "设备多次注册失败",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, merchant",
+    "name": "IP多次请求下单__同一商户",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 10min T",
+    "name": "IP多次登录成功",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊UA"
+    ],
+    "app": "nebula",
+    "expire": 1630565831241,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "python",
+    "name": "Python 用户代理",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">1 ip in 30min",
+    "name": "用户多IP请求下单",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 in 5min",
+    "name": "用户多次请求登录",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "午夜下单"
+    ],
+    "app": "nebula",
+    "expire": 1641106486953,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, 0~6",
+    "name": "用户深夜多次请求下单",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672543086878,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">20 in 5m 非GET非POST",
+    "name": "IP大量连续其他类型请求",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊下单"
+    ],
+    "app": "nebula",
+    "expire": 1672472457461,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">3 order, >1 receiver_geo",
+    "name": "用户高频请求下单__不同城市5m",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, merchant ",
+    "name": "用户多次请求下单__同一商户",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "XSS"
+    ],
+    "app": "nebula",
+    "expire": 1511944963597,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST参数包含跨站脚本攻击特征",
+    "name": "visit_xss_post_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1570183854490,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "> 5M",
+    "name": "IP响应字节过大",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 did in 10m",
+    "name": "IP多个设备请求注册",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1641091020091,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">300 in 5m 静态+动态",
+    "name": "IP大量访问",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, order_money_amount",
+    "name": "IP多次请求下单__不同金额",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 密码 in 10min",
+    "name": "用户换密码登录",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5设备 in 5min",
+    "name": "IP关联多设备请求登录",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627799928000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "延迟判断 5m",
+    "name": "IP请求A一段时间内没有请求B",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "一天关联"
+    ],
+    "app": "nebula",
+    "expire": 1641121620142,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">20, in 1d",
+    "name": "IP当天关联多个用户",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "profile"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1630650711288,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "> 10 in 5m",
+    "name": "IP扫描管理后台",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊UA"
+    ],
+    "app": "nebula",
+    "expire": 1630565831241,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "apachebench|pycurl, 不包括java|python",
+    "name": "服务器用户代理",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">10 in 5m",
+    "name": "设备多次请求注册",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount > 100",
+    "name": "设备多次请求下单__金额较高",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID下单失败比例[5m]>0.8",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, product_id",
+    "name": "用户多次请求下单__不同商品",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627812910000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "login, no xxx in 5m",
+    "name": "设备请求登录前未访问必要资源",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "取消订单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3 in 30min distinct orderid",
+    "name": "设备多次取消订单",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 did in 10min",
+    "name": "用户在多个设备请求登录",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627799928000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "延迟判断 5m",
+    "name": "用户请求A一段时间内没有请求B",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5用户 in 5min",
+    "name": "设备多用户请求登录",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_address_city ",
+    "name": "IP多次请求下单__同一城市",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "IP多次注册成功",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount<= 100",
+    "name": "用户多次请求下单__金额较低",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1609584772891,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 in 5m",
+    "name": "用户关联多个IP地域",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672540382000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">50 动态+静态, 0静态 in 5m",
+    "name": "IP大量请求不加载静态资源",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "下单不支付"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">4 in 30min no pay",
+    "name": "用户下单不支付",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单profile_用户过去一小时下单不同商户数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "profile"
+  },
+  {
+    "tags": [
+      "邀请注册"
+    ],
+    "app": "nebula",
+    "expire": 1609667608438,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 register_count, 1 register_channel in 1h",
+    "name": "IP使用相同邀请码注册",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 in 5min",
+    "name": "设备相同密码请求登录不同账号",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID平均下单成功金额[5m]>2000",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频访问"
+    ],
+    "app": "nebula",
+    "expire": 1672543086878,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">30 in 5m",
+    "name": "IP大量连续GET请求",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">10 in 5m",
+    "name": "设备多次注册成功",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">5 in 30min ",
+    "name": "设备多次请求下单",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "不同下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">2 in 1h, merchant",
+    "name": "用户多次请求下单__不同商户",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "IP多次注册失败",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "恶意扫描"
+    ],
+    "app": "nebula",
+    "expire": 1599203703047,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "> 10 in 5m",
+    "name": "IP请求可疑文件地址",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">1 ip in 30min",
+    "name": "设备多IP请求下单",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略"
+    ],
+    "app": "nebula",
+    "expire": 7587418486895,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "TRANSACTION",
+    "remark": "",
+    "name": "支付_UID5分钟内不同支付账号个数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">5 in 30min",
+    "name": "用户多次请求下单",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 30m, 动态<=4",
+    "name": "IP集中请求注册接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, product_id",
+    "name": "用户多次请求下单__同一商品",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID下单数[5m] >5",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_mobile",
+    "name": "设备多次请求下单__同手机号",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5min",
+    "name": "IP换密码请求登录单账号",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "邀请注册"
+    ],
+    "app": "nebula",
+    "expire": 1609667608438,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3 register_count, 1 register_channel in 1h",
+    "name": "设备使用相同邀请码注册",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, receiver_mobile",
+    "name": "IP多次请求下单__同手机号",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "XSS"
+    ],
+    "app": "nebula",
+    "expire": 1542789646124,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET参数包含跨站脚本攻击特征",
+    "name": "visit_xss_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签",
+      "realtime策略"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID5分钟内下单不同收货人手机号",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, product_id",
+    "name": "IP多次请求下单__同一商品",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联登录"
+    ],
+    "app": "nebula",
+    "expire": 1641116053528,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5用户 in 5min",
+    "name": "IP关联多用户请求登录",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "SQL注入"
+    ],
+    "app": "nebula",
+    "expire": 1511926598593,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "POST请求中包含SQL的符号",
+    "name": "visit_sql_injection_post_hardcore_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "跳跃访问"
+    ],
+    "app": "nebula",
+    "expire": 1627812910000,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": "login, no xxx in 5m",
+    "name": "IP请求登录前未访问必要资源",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641119576127,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 in 5m",
+    "name": "设备关联多个用户",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, user_name",
+    "name": "设备多次请求下单__同一地址",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "RFI"
+    ],
+    "app": "nebula",
+    "expire": 1574481355701,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET参数中包含rfi远程文件包含的特征",
+    "name": "visit_rfi_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641121214738,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">5 in 5m",
+    "name": "设备关联多个IP",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联下单"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">3 设备 in 30min",
+    "name": "IP多设备请求下单",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "特殊下单"
+    ],
+    "app": "nebula",
+    "expire": 1641020242748,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">1000 in 5m",
+    "name": "用户请求下单__金额较大5m",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "SQL注入"
+    ],
+    "app": "nebula",
+    "expire": 1543374617253,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "GET参数中的包含SQL语句特征",
+    "name": "visit_sql_injection_get_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频注册"
+    ],
+    "app": "nebula",
+    "expire": 1672480924640,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">3, 1密码 in 5m",
+    "name": "设备多次使用相同密码注册",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "关联注册"
+    ],
+    "app": "nebula",
+    "expire": 1641031035299,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 ip in 10m",
+    "name": "用户在多个IP请求注册",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "realtime策略标签",
+      "realtime策略"
+    ],
+    "app": "nebula",
+    "expire": 7586039506900,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": "",
+    "name": "订单_UID5分钟内下单不同间夜数",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一访问"
+    ],
+    "app": "nebula",
+    "expire": 1609554496426,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">20 ,<4 页面 cbytes_cv < 0.1 in 5m",
+    "name": "IP大量请求相似接口",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "下单不支付"
+    ],
+    "app": "nebula",
+    "expire": 1564925159000,
+    "checkpoints": "",
+    "ttl": 3600,
+    "category": "ORDER",
+    "remark": ">4 in 30min no pay",
+    "name": "设备下单不支付",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一访问"
+    ],
+    "app": "nebula",
+    "expire": 1672540882527,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": ">20, 0 referrer in 5m",
+    "name": "IP大量请求不带referrer",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "XSS"
+    ],
+    "app": "nebula",
+    "expire": 1630649840283,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "VISITOR",
+    "remark": "请求疑似xss",
+    "name": "visit_xss_request_ip",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1672568002539,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 in 5m",
+    "name": "设备关联多个IP地域",
+    "checkvalue": "did",
+    "decision": "review",
+    "score": 0,
+    "checktype": "DeviceID",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, order_money_amount > 100",
+    "name": "用户多次请求下单__金额较高",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "单一下单"
+    ],
+    "app": "nebula",
+    "expire": 1545898796395,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ORDER",
+    "remark": ">5 in 1h, user_name",
+    "name": "IP多次请求下单__同收货人",
+    "checkvalue": "c_ip",
+    "decision": "review",
+    "score": 0,
+    "checktype": "IP",
+    "test": true,
+    "scope": "realtime"
+  },
+  {
+    "tags": [
+      "高频关联"
+    ],
+    "app": "nebula",
+    "expire": 1641120013785,
+    "checkpoints": "",
+    "ttl": 300,
+    "category": "ACCOUNT",
+    "remark": ">2 in 5m",
+    "name": "用户关联多个设备",
+    "checkvalue": "uid",
+    "decision": "review",
+    "score": 0,
+    "checktype": "USER",
+    "test": true,
+    "scope": "realtime"
+  }
+]

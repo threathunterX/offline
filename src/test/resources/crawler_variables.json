@@ -1,0 +1,719 @@
+[
+  {
+    "app": "nebula",
+    "expire": 0,
+    "ttl": 3600,
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "c_ip"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "sid"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "uid"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "did"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "platform"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "page"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "c_port"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "c_bytes"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "c_body"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "c_type"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "s_ip"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "s_port"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "s_bytes"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "s_body"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "s_type"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "host"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "uri_stem"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "uri_query"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "referer"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "method"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "status"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "cookie"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "useragent"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "xforward"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "long",
+        "name": "request_time"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "request_type"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "referer_hit"
+      },
+      {
+        "identifier": [
+          "nebula",
+          "HTTP_DYNAMIC"
+        ],
+        "type": "string",
+        "name": "notices"
+      }
+    ],
+    "keyTopValue": false,
+    "topValue": false,
+    "remark": "网络访问非静态资源日志",
+    "srcVariablesID": [],
+    "name": "HTTP_DYNAMIC",
+    "dimension": "",
+    "config": {},
+    "priority": 0,
+    "internal": true,
+    "type": "event",
+    "srcEventID": [
+      "nebula",
+      "HTTP_DYNAMIC"
+    ]
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时上行数据量",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_sum_sbytes__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "s_bytes"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "longsum"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": null
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_sum_sbytes__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时平均延迟",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_avg_latency__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "request_time"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "longavg"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": null
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_avg_latency__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时2XX统计",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_count_status2__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "string",
+            "name": "key"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "stringcount"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": {
+        "conditions": [
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longbiggerequals",
+            "param": 200
+          },
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longsmallerthan",
+            "param": 300
+          }
+        ],
+        "type": "and"
+      }
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_count_status2__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时3XX统计",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_count_status3__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "string",
+            "name": "key"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "stringcount"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": {
+        "conditions": [
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longbiggerequals",
+            "param": 300
+          },
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longsmallerthan",
+            "param": 400
+          }
+        ],
+        "type": "and"
+      }
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_count_status3__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时3XX统计",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_count_status4__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "string",
+            "name": "key"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "stringcount"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": {
+        "conditions": [
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longbiggerequals",
+            "param": 400
+          },
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longsmallerthan",
+            "param": 500
+          }
+        ],
+        "type": "and"
+      }
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_count_status4__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  },
+  {
+    "topValue": false,
+    "remark": "单个page1小时5XX统计",
+    "srcVariablesID": [
+      [
+        "nebula",
+        "HTTP_DYNAMIC"
+      ]
+    ],
+    "name": "page__visit__dynamic_count_status5__1h__slot",
+    "config": {
+      "reductions": [
+        {
+          "srcProperty": {
+            "identifier": [],
+            "type": "string",
+            "name": "key"
+          },
+          "destProperty": {
+            "identifier": [],
+            "type": "long",
+            "name": "value"
+          },
+          "type": "stringcount"
+        }
+      ],
+      "groupedKeys": [
+        {
+          "identifier": [],
+          "type": "string",
+          "name": "page"
+        }
+      ],
+      "aggregateType": "realtime",
+      "period": 300,
+      "condition": {
+        "conditions": [
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longbiggerequals",
+            "param": 500
+          },
+          {
+            "srcProperty": {
+              "identifier": [
+                "nebula",
+                "HTTP_DYNAMIC"
+              ],
+              "type": "long",
+              "name": "status"
+            },
+            "type": "longsmallerthan",
+            "param": 600
+          }
+        ],
+        "type": "and"
+      }
+    },
+    "app": "nebula",
+    "internal": true,
+    "module": "realtime",
+    "properties": [
+      {
+        "identifier": [
+          "nebula",
+          "page__visit__dynamic_count_status5__1h__slot"
+        ],
+        "type": "string",
+        "name": "page"
+      }
+    ],
+    "priority": 10,
+    "chineseName": "",
+    "keyTopValue": false,
+    "expire": 0,
+    "ttl": 300,
+    "type": "aggregate",
+    "dimension": "page",
+    "valueType": "long",
+    "srcEventID": null
+  }
+]
