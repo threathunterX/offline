@@ -19,7 +19,7 @@ import java.util.List;
 import static com.threathunter.bordercollie.slot.util.JsonFileReader.ClassType.LIST;
 
 /**
- * Created by daisy on 18-2-3
+ * 
  */
 public class SlotCronIntegrationTest {
     private void initMetas(final String metaFile) throws IOException {

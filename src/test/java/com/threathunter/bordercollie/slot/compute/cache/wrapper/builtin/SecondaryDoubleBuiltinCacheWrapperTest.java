@@ -15,7 +15,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/21.
+ * 
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(BuiltinCacheStore.class)

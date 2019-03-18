@@ -7,7 +7,7 @@ import com.threathunter.variable.DimensionType;
 import java.util.*;
 
 /**
- * Created by daisy on 17/3/17.
+ * 
  */
 public class VariableCacheIterator implements Iterator<Map.Entry<String, Map<String, Object>>> {
     private final Iterator<String> mapKeyIterator;

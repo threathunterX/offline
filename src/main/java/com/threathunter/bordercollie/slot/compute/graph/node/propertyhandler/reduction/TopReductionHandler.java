@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-13.
+ * 
  */
 public abstract class TopReductionHandler implements ReductionHandler {
     protected final String topKey;

@@ -7,7 +7,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.CacheWrapperMeta
 import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 public abstract class BuiltinCacheWrapper<T, R> implements CacheWrapper<T, R> {
     protected int offset;

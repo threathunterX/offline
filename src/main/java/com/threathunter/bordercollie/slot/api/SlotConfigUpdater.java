@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 16/5/30.
+ * 
  */
 public class SlotConfigUpdater {
     // todo move to nebula_slot_compute

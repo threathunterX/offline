@@ -7,7 +7,7 @@ import com.threathunter.variable.condition.CompoundCondition;
 import java.util.List;
 
 /**
- * Created by daisy on 16/5/23.
+ * 
  */
 public class CompoundConditionHandler implements PropertyConditionHandler {
     private List<PropertyConditionHandler> subConditionHandlers;

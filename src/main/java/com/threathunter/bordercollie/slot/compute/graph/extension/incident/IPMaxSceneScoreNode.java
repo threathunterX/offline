@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * Incident score compute now is not right.
  * <p>
- * Created by daisy on 17/3/31.
+ * 
  */
 public class IPMaxSceneScoreNode implements CacheNode<Object>, IncidentNode {
     private final List<CacheWrapper> wrappers;

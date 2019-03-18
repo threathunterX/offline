@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/4/16.
+ * 
  */
 public class IncidentVariableMeta extends VariableMeta {
     public static final String TYPE = "incident";

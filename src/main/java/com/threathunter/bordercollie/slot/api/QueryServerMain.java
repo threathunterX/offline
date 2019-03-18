@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 
 /**
- * Created by toyld on 5/6/17.
+ * 
  */
 public class QueryServerMain {
     private static final Logger logger = LoggerFactory.getLogger(QueryServerMain.class);

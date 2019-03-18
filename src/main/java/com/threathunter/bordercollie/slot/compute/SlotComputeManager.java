@@ -25,7 +25,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by daisy on 17/3/6.
+ * 
  */
 public class SlotComputeManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(SlotComputeManager.class);

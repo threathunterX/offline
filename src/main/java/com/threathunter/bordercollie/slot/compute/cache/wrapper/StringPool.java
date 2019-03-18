@@ -3,7 +3,7 @@ package com.threathunter.bordercollie.slot.compute.cache.wrapper;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by daisy on 18-2-5
+ * 
  */
 public class StringPool {
     private static final StringPool INSTANCE = new StringPool();

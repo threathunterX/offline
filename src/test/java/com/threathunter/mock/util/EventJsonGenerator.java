@@ -9,7 +9,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 
 /**
- * Created by daisy on 17/6/29.
+ * 
  */
 public class EventJsonGenerator {
     private static final Logger LOGGER = LoggerFactory.getLogger(EventJsonGenerator.class);

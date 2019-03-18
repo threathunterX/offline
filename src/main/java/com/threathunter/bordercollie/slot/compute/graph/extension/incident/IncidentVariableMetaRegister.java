@@ -8,7 +8,7 @@ import com.threathunter.variable.DimensionType;
 import java.util.*;
 
 /**
- * Created by daisy on 17/4/19.
+ * 
  */
 public class IncidentVariableMetaRegister {
     private static final Map<DimensionType, List<VariableMeta>> DIMENSION_INCIDENT_VARIABLE_METAS = new HashMap<>();

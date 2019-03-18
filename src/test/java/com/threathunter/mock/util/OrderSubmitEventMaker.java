@@ -6,7 +6,7 @@ import org.apache.commons.lang.RandomStringUtils;
 import java.util.Random;
 
 /**
- * Created by daisy on 17/1/12.
+ * 
  */
 public class OrderSubmitEventMaker implements EventMaker {
     private HttpDynamicEventMaker httpDynamicEventMaker;

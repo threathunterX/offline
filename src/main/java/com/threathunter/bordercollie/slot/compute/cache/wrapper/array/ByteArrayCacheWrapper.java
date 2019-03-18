@@ -9,7 +9,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 import com.threathunter.variable.exception.NotSupportException;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 public abstract class ByteArrayCacheWrapper<T, R> implements CacheWrapper<T, R> {
     protected int offset;

@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by yy on 17-11-22.
+ * 
  */
 public class ITServerMainTest {
     public static Logger logger = LoggerFactory.getLogger(ITServerMainTest.class);

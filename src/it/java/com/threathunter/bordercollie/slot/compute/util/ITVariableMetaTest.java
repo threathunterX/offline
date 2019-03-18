@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.List;
 
 /**
- * Created by yy on 17-11-28.
+ * 
  */
 public class ITVariableMetaTest {
     @Test

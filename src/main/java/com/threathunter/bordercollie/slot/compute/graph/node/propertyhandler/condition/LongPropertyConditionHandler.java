@@ -5,7 +5,7 @@ import com.threathunter.common.Identifier;
 import com.threathunter.variable.condition.LongPropertyCondition;
 
 /**
- * Created by daisy on 16/5/23.
+ * 
  */
 public abstract class LongPropertyConditionHandler implements PropertyConditionHandler {
     final long param;

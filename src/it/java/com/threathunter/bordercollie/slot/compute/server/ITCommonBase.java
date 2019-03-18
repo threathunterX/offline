@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by yy on 17-11-14.
+ * 
  */
 public abstract class ITCommonBase {
     private static Logger logger = LoggerFactory.getLogger(ITCommonBase.class);

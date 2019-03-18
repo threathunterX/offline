@@ -8,7 +8,7 @@ import com.threathunter.bordercollie.slot.util.HashType;
 import net.agkn.hll.HLL;
 
 /**
- * Created by toyld on 3/22/17.
+ * 
  */
 public abstract class SecondaryCountsArrayCacheWrapper<T> extends ByteArrayCacheWrapper<T, Integer> {
     public SecondaryCountsArrayCacheWrapper(CacheWrapperMeta meta) {

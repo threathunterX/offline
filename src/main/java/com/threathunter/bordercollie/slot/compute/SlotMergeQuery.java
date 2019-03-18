@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-14.
+ * 
  */
 public class SlotMergeQuery {
     private final SlotComputable engine;

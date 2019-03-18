@@ -11,7 +11,7 @@ import java.util.Map;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 /**
- * Created by yy on 17-11-26.
+ * 
  */
 public class ITLeveDBApiTest {
     @Test

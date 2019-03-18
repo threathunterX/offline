@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by yy on 17-8-8.
+ * 
  */
 public abstract class CommonEventsAction implements EventsAction {
 

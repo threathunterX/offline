@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by toyld on 4/6/17.
+ * 
  */
 public class OfflineQueryServer {
     private static final Logger logger = LoggerFactory.getLogger(OfflineQueryServer.class);

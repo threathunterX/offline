@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * Created by daisy on 17/3/31.
+ * 
  */
 public class DimensionSceneHitCountNode implements CacheNode<Map>, IncidentNode {
     private static final Logger logger = LoggerFactory.getLogger("bordercollie");

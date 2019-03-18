@@ -7,7 +7,7 @@ import com.threathunter.variable.DimensionType;
 import java.util.List;
 
 /**
- * Created by daisy on 17/3/20.
+ * 
  */
 public interface CacheNode<R> {
     String getVariableName();

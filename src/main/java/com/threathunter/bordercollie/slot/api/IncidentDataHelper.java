@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by toyld on 3/1/17.
+ * 
  */
 public class IncidentDataHelper implements DataConsumer {
     private static final Logger logger = LoggerFactory.getLogger(IncidentDataHelper.class);

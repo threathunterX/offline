@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/21.
+ * 
  */
 public abstract class SecondaryLongArrayCacheWrapper extends ByteArrayCacheWrapper<Long, Long> {
     protected final HashType keyHashType;

@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-13.
+ * 
  */
 public class TopVariableNode extends VariableNode implements CacheNode<List> {
     Logger logger = LoggerFactory.getLogger(TopVariableNode.class);

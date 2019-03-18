@@ -3,7 +3,7 @@ package com.threathunter.bordercollie.slot.util;
 import java.util.*;
 
 /**
- * Created by daisy on 16/8/25.
+ * 
  */
 public class LimitMaxPriorityQueue {
     private final int capacity;

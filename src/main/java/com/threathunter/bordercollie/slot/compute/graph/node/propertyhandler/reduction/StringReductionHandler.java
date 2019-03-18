@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by daisy on 16/5/20.
+ * 
  */
 public abstract class StringReductionHandler implements ReductionHandler {
     protected List<Property> srcProperties;

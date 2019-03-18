@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/8.
+ * 
  */
 public class CacheWrapperFactory {
     private static final Map<CacheType, CacheWrapperCreator> ARRAY_REGISTRY = new

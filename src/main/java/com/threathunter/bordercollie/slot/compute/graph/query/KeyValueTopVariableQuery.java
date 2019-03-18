@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by daisy on 17/4/3.
+ * 
  */
 public class KeyValueTopVariableQuery implements VariableQuery, TopQuery {
     private static final Logger LOGGER = LoggerFactory.getLogger(KeyValueTopVariableQuery.class);

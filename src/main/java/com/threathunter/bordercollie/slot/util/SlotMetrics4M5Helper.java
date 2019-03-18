@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by yy on 17-10-30.
+ * 
  */
 public class SlotMetrics4M5Helper {
     private static final SlotMetrics4M5Helper INSTANCE = new SlotMetrics4M5Helper();

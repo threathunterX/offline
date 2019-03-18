@@ -4,7 +4,7 @@ import net.agkn.hll.HLL;
 import net.agkn.hll.HLLType;
 
 /**
- * Created by daisy on 17/4/21.
+ * 
  */
 public class HLLUtil {
     public static String getHLLKey(int wrapperOffset, final String key) {

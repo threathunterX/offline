@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by toyld on 4/30/17.
+ * 
  */
 public class ServerMain {
     private static Logger logger = LoggerFactory.getLogger(ServerMain.class);

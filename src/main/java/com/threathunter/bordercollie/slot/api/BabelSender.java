@@ -1,5 +1,5 @@
 package com.threathunter.bordercollie.slot.api; /**
- * Created by toyld on 2/27/17.
+ * 
  */
 
 import org.slf4j.Logger;

@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by daisy on 17/3/6.
+ * 
  */
 public class DimensionHelper {
     // Here is Sharding base of dimension.

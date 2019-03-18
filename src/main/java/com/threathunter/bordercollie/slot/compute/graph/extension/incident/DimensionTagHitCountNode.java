@@ -15,7 +15,7 @@ import com.threathunter.variable.DimensionType;
 import java.util.*;
 
 /**
- * Created by daisy on 17/3/31.
+ * 
  */
 public class DimensionTagHitCountNode implements CacheNode<List>, IncidentNode {
     private static final Map<DimensionType, String> VARIABLE_NAME;

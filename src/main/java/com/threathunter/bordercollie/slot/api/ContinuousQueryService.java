@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by toyld on 5/6/17.
+ * 
  */
 public class ContinuousQueryService implements Service {
     private final ServiceMeta meta;

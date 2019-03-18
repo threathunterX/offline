@@ -6,7 +6,7 @@ import com.threathunter.bordercollie.slot.compute.graph.node.CacheNode;
 import java.util.*;
 
 /**
- * Created by daisy on 17/4/14.
+ * 
  */
 public class LimitMaxPriorityNodeQueue {
     private int size = 0;

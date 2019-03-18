@@ -35,7 +35,7 @@ import static java.nio.file.FileVisitResult.TERMINATE;
 
 
 /**
- * Created by toyld on 2/13/17.
+ * 
  */
 public class OfflineSlotDataHelper implements DataConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(OfflineSlotDataHelper.class);

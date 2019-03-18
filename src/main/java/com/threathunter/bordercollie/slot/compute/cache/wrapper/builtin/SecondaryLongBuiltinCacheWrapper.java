@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.compute.cache.wrapper.builtin;
 
 /**
- * Created by toyld on 3/21/17.
+ * 
  */
 
 import com.threathunter.bordercollie.slot.compute.cache.CacheType;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/21.
+ * 
  */
 public abstract class SecondaryLongBuiltinCacheWrapper extends BuiltinCacheWrapper<Long, Long> {
 

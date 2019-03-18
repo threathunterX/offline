@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 public class EventVariableNode extends VariableNode {
     Logger logger = LoggerFactory.getLogger(EventVariableNode.class);

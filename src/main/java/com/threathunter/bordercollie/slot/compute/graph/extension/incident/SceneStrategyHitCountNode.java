@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * key is scene@@strategy so that cache can just add 4bytes for every global
  * <p>
- * Created by daisy on 17/3/30.
+ * 
  */
 public class SceneStrategyHitCountNode implements CacheNode<List>, IncidentNode {
     private final List<CacheWrapper> wrappers;

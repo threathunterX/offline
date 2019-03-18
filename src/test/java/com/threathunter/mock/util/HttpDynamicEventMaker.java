@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * Created by daisy on 16-4-8.
+ * 
  */
 public class HttpDynamicEventMaker implements EventMaker {
     int mockCount;

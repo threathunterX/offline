@@ -14,7 +14,7 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(BuiltinCacheStore.class)

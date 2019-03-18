@@ -5,7 +5,7 @@ import com.threathunter.config.CommonDynamicConfig;
 import org.junit.Test;
 
 /**
- * Created by yy on 17-11-26.
+ * 
  */
 public class ITQueryServerMainTest {
     @Test

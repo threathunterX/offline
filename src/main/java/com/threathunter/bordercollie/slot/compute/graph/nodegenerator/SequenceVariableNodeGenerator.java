@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by toyld on 3/28/17.
+ * 
  */
 public class SequenceVariableNodeGenerator extends VariableNodeGenerator<SequenceVariableMeta> {
     private static final Logger LOGGER = LoggerFactory.getLogger("bordercollie");

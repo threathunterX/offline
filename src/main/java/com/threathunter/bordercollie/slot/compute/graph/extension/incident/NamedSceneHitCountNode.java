@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/4/3.
+ * 
  */
 public class NamedSceneHitCountNode implements CacheNode<Integer>, IncidentNode {
     private final List<CacheWrapper> wrappers;

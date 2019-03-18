@@ -3,7 +3,7 @@ package com.threathunter.bordercollie.slot.compute.cache.storage;
 import java.util.Iterator;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 public interface CacheStore {
     /**

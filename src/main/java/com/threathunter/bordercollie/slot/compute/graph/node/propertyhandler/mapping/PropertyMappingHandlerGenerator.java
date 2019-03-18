@@ -9,7 +9,7 @@ import com.threathunter.model.PropertyMapping;
 import com.threathunter.variable.mapping.*;
 
 /**
- * Created by daisy on 16/5/16.
+ * 
  */
 public abstract class PropertyMappingHandlerGenerator<M extends PropertyMapping> {
     private static final ClassBasedRegistry<PropertyMapping, PropertyMappingHandlerGenerator> registry =

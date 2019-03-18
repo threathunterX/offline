@@ -18,7 +18,7 @@ import java.sql.Timestamp;
 import java.util.*;
 
 /**
- * Created by toyld on 5/6/17.
+ * 
  */
 public class OfflineBaselineQueryService implements Service {
     private final ServiceMeta meta;

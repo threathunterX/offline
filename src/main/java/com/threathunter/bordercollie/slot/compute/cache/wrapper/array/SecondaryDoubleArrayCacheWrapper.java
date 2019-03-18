@@ -8,7 +8,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 import com.threathunter.bordercollie.slot.util.HashType;
 
 /**
- * Created by daisy on 17/3/21.
+ * 
  */
 public abstract class SecondaryDoubleArrayCacheWrapper extends ByteArrayCacheWrapper<Double, Double> {
     protected final HashType keyHashType;

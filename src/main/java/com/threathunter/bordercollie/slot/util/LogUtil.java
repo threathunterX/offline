@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-16.
+ * 
  */
 public class LogUtil {
     public static void print(VariableDataContext context, Logger logger) {

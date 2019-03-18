@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by daisy on 17/3/22.
+ * 
  */
 @Slf4j
 public class ByteArrayUtilTest {

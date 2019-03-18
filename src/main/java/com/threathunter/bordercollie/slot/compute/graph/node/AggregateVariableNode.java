@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * Created by daisy on 17/3/25.
+ * 
  */
 public class AggregateVariableNode<R> extends VariableNode implements CacheNode<R> {
     private List<CacheWrapper> cacheWrappers;

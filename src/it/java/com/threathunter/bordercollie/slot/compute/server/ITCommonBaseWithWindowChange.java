@@ -22,7 +22,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by yy on 17-11-14.
+ * 
  */
 public abstract class ITCommonBaseWithWindowChange {
     private static Logger logger = LoggerFactory.getLogger(ITCommonBaseWithWindowChange.class);

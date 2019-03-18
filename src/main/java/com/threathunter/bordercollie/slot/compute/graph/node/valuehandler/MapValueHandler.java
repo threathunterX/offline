@@ -7,7 +7,7 @@ import com.threathunter.common.NamedType;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/4/28.
+ * 
  */
 public abstract class MapValueHandler<R> implements ValueHandler<Map<String, Object>, R> {
     protected final int indexCount;

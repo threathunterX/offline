@@ -5,7 +5,7 @@ import com.google.common.hash.Hashing;
 import java.nio.charset.Charset;
 
 /**
- * Created by daisy on 17/3/6.
+ * 
  */
 public enum HashType {
     IP,

@@ -8,7 +8,7 @@ import com.google.common.collect.ImmutableMap;
 import java.util.*;
 
 /**
- * Created by daisy on 16/5/30.
+ * 
  */
 public class SlotVariableMetaRegister {
     private static final SlotVariableMetaRegister REGISTER = new SlotVariableMetaRegister();

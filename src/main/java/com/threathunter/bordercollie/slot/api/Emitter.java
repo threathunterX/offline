@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.api;
 
 /**
- * Created by yy on 17-11-21.
+ * 
  */
 public interface Emitter {
     void render();

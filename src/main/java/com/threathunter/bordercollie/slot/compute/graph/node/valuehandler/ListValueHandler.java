@@ -7,7 +7,7 @@ import com.threathunter.common.NamedType;
 import java.util.List;
 
 /**
- * Created by daisy on 17/4/28.
+ * 
  */
 public abstract class ListValueHandler<R> implements ValueHandler<List<Object>, R> {
     protected final int indexCount;

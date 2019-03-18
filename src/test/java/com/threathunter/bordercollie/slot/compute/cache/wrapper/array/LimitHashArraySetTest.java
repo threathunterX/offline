@@ -12,7 +12,7 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 /**
- * Created by daisy on 17-11-18
+ * 
  */
 public class LimitHashArraySetTest {
     @Test

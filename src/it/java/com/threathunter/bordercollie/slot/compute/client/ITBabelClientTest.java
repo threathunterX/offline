@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 import static junit.framework.TestCase.fail;
 
 /**
- * Created by yy on 17-11-26.
+ * 
  */
 public class ITBabelClientTest {
     private static ServiceClient client;

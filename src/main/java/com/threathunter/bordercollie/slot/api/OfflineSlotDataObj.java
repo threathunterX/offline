@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.api;
 
 /**
- * Created by toyld on 2/14/17.
+ * 
  */
 public class OfflineSlotDataObj {
     private byte[] key;

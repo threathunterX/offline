@@ -10,7 +10,7 @@ import com.threathunter.variable.reduction.*;
 import java.util.List;
 
 /**
- * Created by daisy on 16/5/13.
+ * 
  */
 public abstract class PropertyReductionHandlerGenerator<R extends PropertyReduction> {
     private static final ClassBasedRegistry<PropertyReduction, PropertyReductionHandlerGenerator> registry =

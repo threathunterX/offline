@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/16.
+ * 
  */
 public class ByteArrayCacheStore implements CacheStore {
     private Map<String, byte[]> cacheMap;

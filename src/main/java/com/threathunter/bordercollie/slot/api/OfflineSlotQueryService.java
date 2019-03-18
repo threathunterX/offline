@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by toyld on 5/6/17.
+ * 
  */
 public class OfflineSlotQueryService implements Service {
     private static final Logger LOGGER = LoggerFactory.getLogger(OfflineSlotQueryService.class);

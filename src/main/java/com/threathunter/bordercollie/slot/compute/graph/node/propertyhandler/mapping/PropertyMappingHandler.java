@@ -4,7 +4,7 @@ package com.threathunter.bordercollie.slot.compute.graph.node.propertyhandler.ma
 import com.threathunter.bordercollie.slot.compute.VariableDataContext;
 
 /**
- * Created by daisy on 16/5/16.
+ * 
  */
 public interface PropertyMappingHandler {
 

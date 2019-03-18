@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.List;
 
 /**
- * Created by yy on 17-11-20.
+ * 
  */
 public class MetaUtil {
     private static Logger logger = LoggerFactory.getLogger(MetaUtil.class);

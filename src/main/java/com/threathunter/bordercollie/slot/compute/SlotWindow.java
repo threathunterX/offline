@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-7.
+ * 
  */
 public class SlotWindow {
     private final Long id;

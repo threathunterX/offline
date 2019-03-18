@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/20.
+ * 
  */
 public class FilterVariableNode extends VariableNode {
     private List<PropertyMappingHandler> mappingHandlers;

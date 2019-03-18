@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by daisy on 16/5/13.
+ * 
  */
 public abstract class PropertyConditionHandlerGenerator<C extends PropertyCondition> {
     private static final ClassBasedRegistry<PropertyCondition, PropertyConditionHandlerGenerator> registry =

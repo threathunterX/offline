@@ -5,7 +5,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.CacheWrapperMeta
 import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 
 /**
- * Created by toyld on 3/21/17.
+ * 
  */
 public abstract class LongArrayCacheWrapper extends ByteArrayCacheWrapper<Long, Object> {
     protected static final byte NULL_FLAG = 0;

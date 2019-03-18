@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
- * Created by daisy on 16/7/20.
+ * 
  */
 public class StrategyInfoCache {
     private static Logger logger = LoggerFactory.getLogger(StrategyInfoCache.class);

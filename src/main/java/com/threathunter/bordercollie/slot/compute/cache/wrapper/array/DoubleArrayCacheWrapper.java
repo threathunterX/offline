@@ -5,7 +5,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.CacheWrapperMeta
 import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 
 /**
- * Created by daisy on 17/3/20.
+ * 
  */
 public abstract class DoubleArrayCacheWrapper extends ByteArrayCacheWrapper<Double, Double> {
 

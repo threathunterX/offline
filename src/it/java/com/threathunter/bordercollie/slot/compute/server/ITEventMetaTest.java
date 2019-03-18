@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.List;
 
 /**
- * Created by yy on 17-11-27.
+ * 
  */
 public class ITEventMetaTest {
     @Test

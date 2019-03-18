@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by daisy on 16/5/20.
+ * 
  */
 public abstract class LongReductionHandler implements ReductionHandler {
     protected List<Property> srcProperties;

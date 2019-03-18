@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/31.
+ * 
  */
 public class IPSceneStrategyCountNode implements CacheNode<Map>, IncidentNode {
     private final List<CacheWrapper> wrappers;

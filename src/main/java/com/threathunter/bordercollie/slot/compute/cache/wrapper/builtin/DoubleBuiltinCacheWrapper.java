@@ -6,7 +6,7 @@ import org.apache.commons.lang3.mutable.MutableDouble;
 import org.apache.commons.lang3.mutable.MutableInt;
 
 /**
- * Created by daisy on 17/3/20.
+ * 
  */
 public abstract class DoubleBuiltinCacheWrapper extends BuiltinCacheWrapper<Double, Double> {
 

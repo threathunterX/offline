@@ -23,7 +23,7 @@ import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
 /**
- * Created by daisy on 17/3/30.
+ * 
  */
 public class IncidentComputeWorker extends Thread {
     private static final Logger LOGGER = LoggerFactory.getLogger(IncidentComputeWorker.class);

@@ -6,7 +6,7 @@ import com.threathunter.common.NamedType;
 
 
 /**
- * Created by daisy on 17/4/28.
+ * 
  */
 public abstract class SimpleValueHandler<R> implements ValueHandler<R, R> {
     protected int indexCount;

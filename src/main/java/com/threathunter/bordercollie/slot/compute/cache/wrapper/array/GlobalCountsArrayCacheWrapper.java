@@ -15,7 +15,7 @@ import java.util.Map;
 import static com.threathunter.bordercollie.slot.compute.cache.wrapper.array.CacheConstants.GLOBAL_KEY;
 
 /**
- * Created by daisy on 17/3/22.
+ * 
  */
 public abstract class GlobalCountsArrayCacheWrapper<T, R> extends ByteArrayCacheWrapper<T, R> {
 

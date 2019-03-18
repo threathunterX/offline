@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by daisy on 17/3/25.
+ * 
  */
 public class DualvarVariableNode extends VariableNode implements CacheNode<Double> {
 

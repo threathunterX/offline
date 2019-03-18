@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/21.
+ * 
  */
 public abstract class SecondaryDoubleBuiltinCacheWrapper extends BuiltinCacheWrapper<Double, Double> {
 

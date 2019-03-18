@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by yy on 17-11-13.
+ * 
  */
 public class TopVariableNodeGenerator extends VariableNodeGenerator<TopVariableMeta> {
     private static final Logger LOGGER = LoggerFactory.getLogger("bordercollie");

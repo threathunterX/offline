@@ -10,7 +10,7 @@ import net.agkn.hll.HLL;
 import java.util.*;
 
 /**
- * Created by toyld on 3/21/17.
+ * 
  */
 public abstract class CountsArrayCacheWrapper<T, R> extends ByteArrayCacheWrapper<T, R> {
     public CountsArrayCacheWrapper(final CacheWrapperMeta meta) {

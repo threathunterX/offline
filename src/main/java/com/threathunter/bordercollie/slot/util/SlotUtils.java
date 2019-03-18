@@ -20,7 +20,7 @@ import static com.threathunter.persistent.core.util.BytesEncoderDecoder.encode8;
 
 
 /**
- * Created by toyld on 2/16/17.
+ * 
  */
 public class SlotUtils {
     private static final Logger logger = LoggerFactory.getLogger(SlotUtils.class);

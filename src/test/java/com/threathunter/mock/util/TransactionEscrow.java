@@ -6,7 +6,7 @@ import org.apache.commons.lang.RandomStringUtils;
 import java.util.Random;
 
 /**
- * Created by daisy on 18-1-17
+ * 
  */
 public class TransactionEscrow implements EventMaker {
     private HttpDynamicEventMaker httpDynamicEventMaker;

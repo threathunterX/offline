@@ -5,7 +5,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.CacheWrapperMeta
 import org.apache.commons.lang3.mutable.MutableDouble;
 
 /**
- * Created by daisy on 17/5/14.
+ * 
  */
 public abstract class GlobalDoubleBuiltinCacheWrapper extends BuiltinCacheWrapper<Double, Double> {
     protected static final String GLOBAL_KEY = "__GLOBAL__";

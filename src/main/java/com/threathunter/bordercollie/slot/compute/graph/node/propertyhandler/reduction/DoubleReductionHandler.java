@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by daisy on 17/5/15.
+ * 
  */
 public abstract class DoubleReductionHandler implements ReductionHandler {
     protected List<Property> srcProperties;

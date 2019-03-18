@@ -26,7 +26,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by yy on 17-11-7.
+ * 
  */
 public class SlotQuery implements SlotQueryable {
     private static Logger logger = LoggerFactory.getLogger(SlotQuery.class);

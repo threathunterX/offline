@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.compute.cache;
 
 /**
- * Created by daisy on 17/3/8.
+ * 
  */
 public enum CacheType {
     GLOBAL_GROUP_SUM_LONG,

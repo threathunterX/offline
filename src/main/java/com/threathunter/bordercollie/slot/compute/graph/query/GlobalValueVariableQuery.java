@@ -14,7 +14,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by daisy on 17/4/3.
+ * 
  */
 public class GlobalValueVariableQuery implements VariableQuery {
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalValueVariableQuery.class);

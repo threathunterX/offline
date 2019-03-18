@@ -13,7 +13,7 @@ import java.util.Map;
 import static com.threathunter.bordercollie.slot.compute.cache.wrapper.array.CacheConstants.GLOBAL_KEY;
 
 /**
- * Created by daisy on 17/5/14.
+ * 
  */
 public abstract class GlobalLongArrayCacheWrapper extends ByteArrayCacheWrapper<Long, Long> {
     protected static final byte NULL_FLAG = 0;

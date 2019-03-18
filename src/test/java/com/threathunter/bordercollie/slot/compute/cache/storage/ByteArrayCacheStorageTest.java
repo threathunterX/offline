@@ -26,7 +26,7 @@ import java.util.Random;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by daisy on 17/3/25.
+ * 
  */
 @Slf4j
 public class ByteArrayCacheStorageTest {

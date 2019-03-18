@@ -6,7 +6,7 @@ import org.apache.commons.lang3.mutable.MutableLong;
 import java.util.*;
 
 /**
- * Created by daisy on 16/7/22.
+ * 
  */
 public class IncidentEventMaker implements EventMaker {
     private Map<String, StrategyInfo> strategyInfos;

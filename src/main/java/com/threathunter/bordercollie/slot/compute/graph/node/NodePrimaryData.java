@@ -5,7 +5,7 @@ import com.threathunter.bordercollie.slot.compute.cache.wrapper.PrimaryData;
 import java.util.List;
 
 /**
- * Created by daisy on 17-12-12
+ * 
  */
 public abstract class NodePrimaryData {
     private PrimaryData[] wrapperPrimaryData;

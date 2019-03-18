@@ -11,7 +11,7 @@ import java.util.List;
  * For distinct count wrapper, because the actual storage is in other place,
  * this set instance only contains some meta for searching and writing.
  * <p>
- * Created by daisy on 17-11-18
+ * 
  */
 public class LimitHashArraySet {
     private final HashFunction function = Hashing.murmur3_32();

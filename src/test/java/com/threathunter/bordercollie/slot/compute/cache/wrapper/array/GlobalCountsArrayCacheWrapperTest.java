@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/23.
+ * 
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(ByteArrayCacheStore.class)

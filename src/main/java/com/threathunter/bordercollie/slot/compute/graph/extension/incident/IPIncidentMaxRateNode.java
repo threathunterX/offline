@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by daisy on 17/3/31.
+ * 
  */
 public class IPIncidentMaxRateNode implements CacheNode<Long>, IncidentNode {
     private static final long ONE_MINUTE = 60 * 1000;

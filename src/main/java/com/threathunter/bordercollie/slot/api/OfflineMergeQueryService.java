@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-12-8.
+ * 
  */
 public class OfflineMergeQueryService implements Service {
     private static final Logger LOGGER = LoggerFactory.getLogger(OfflineMergeQueryService.class);

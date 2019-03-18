@@ -15,7 +15,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * Created by toyld on 2/28/17.
+ * 
  */
 public class ProfileStatBabelSender extends BabelSender {
     private static final Logger logger = LoggerFactory.getLogger(ProfileStatBabelSender.class);

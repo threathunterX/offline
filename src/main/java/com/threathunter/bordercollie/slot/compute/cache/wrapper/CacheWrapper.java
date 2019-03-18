@@ -4,7 +4,7 @@ package com.threathunter.bordercollie.slot.compute.cache.wrapper;
 import com.threathunter.bordercollie.slot.compute.cache.storage.CacheStore;
 
 /**
- * Created by daisy on 17/3/8.
+ * 
  */
 public interface CacheWrapper<T, R> {
     /**

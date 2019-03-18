@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * Created by daisy on 17/3/6.
+ * 
  */
 public class VariableGraph {
     private static final Logger LOGGER = LoggerFactory.getLogger(VariableGraph.class);

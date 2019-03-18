@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by yy on 17-11-7.
+ * 
  */
 public class SlotFactory {
     public static SlotEngine createSlotEngine(int interval, TimeUnit timeUnit, Set<DimensionType> enableDimensions, List<VariableMeta> metas) {

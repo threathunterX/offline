@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by daisy on 17-12-10
+ * 
  */
 public class ITOfflineSlotVariableQueryTest {
     @Test

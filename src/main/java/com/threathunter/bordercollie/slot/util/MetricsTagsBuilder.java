@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/6.
+ * 
  */
 public class MetricsTagsBuilder {
     public static Map<String, Object> buildNormalTags(boolean isSuccess, String eventName, DimensionType dimension, String shard) {

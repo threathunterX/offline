@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * Created by daisy on 17/4/13.
+ * 
  */
 public class IncidentVariableGraphManager implements VariableGraphManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(IncidentVariableGraphManager.class);

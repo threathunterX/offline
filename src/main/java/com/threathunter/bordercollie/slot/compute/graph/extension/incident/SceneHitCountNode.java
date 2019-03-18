@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/31.
+ * 
  */
 public class SceneHitCountNode implements CacheNode<Integer>, IncidentNode {
     private static final Map<String, String> CATEGORY_VARIABLE_MAP;

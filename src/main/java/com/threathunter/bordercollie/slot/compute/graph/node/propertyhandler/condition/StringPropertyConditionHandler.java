@@ -5,7 +5,7 @@ import com.threathunter.common.Identifier;
 import com.threathunter.variable.condition.StringPropertyCondition;
 
 /**
- * Created by daisy on 16/5/13.
+ * 
  */
 public abstract class StringPropertyConditionHandler implements PropertyConditionHandler {
     final String param;

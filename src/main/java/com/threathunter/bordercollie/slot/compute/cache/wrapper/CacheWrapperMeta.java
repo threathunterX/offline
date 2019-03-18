@@ -5,7 +5,7 @@ import com.threathunter.bordercollie.slot.compute.cache.StorageType;
 import com.threathunter.bordercollie.slot.util.HashType;
 
 /**
- * Created by daisy on 17/3/27.
+ * 
  */
 public class CacheWrapperMeta {
     private StorageType storageType;

@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.api;
 
 /**
- * Created by toyld on 3/1/17.
+ * 
  */
 public class ProfileStatDataObj {
     private String key;

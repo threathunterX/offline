@@ -3,7 +3,7 @@ package com.threathunter.bordercollie.slot.util;
 import com.threathunter.geo.GeoUtil;
 
 /**
- * Created by daisy on 16-1-18.
+ * 
  */
 public class LocationHelper {
 

@@ -1,7 +1,7 @@
 package com.threathunter.bordercollie.slot.compute.cache.wrapper.array;
 
 /**
- * Created by daisy on 17/3/22.
+ * 
  */
 public class ByteArrayUtil {
     /**

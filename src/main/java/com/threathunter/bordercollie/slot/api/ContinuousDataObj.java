@@ -4,7 +4,7 @@ import com.aerospike.client.Bin;
 import com.aerospike.client.Key;
 
 /**
- * Created by toyld on 2/14/17.
+ * 
  */
 public class ContinuousDataObj {
     private Key key;

@@ -9,7 +9,7 @@ import org.apache.commons.lang3.mutable.MutableLong;
 import java.util.Set;
 
 /**
- * Created by daisy on 17/5/14.
+ * 
  */
 public abstract class GlobalLongBuiltinCacheWrapper extends BuiltinCacheWrapper<Long, Long> {
     protected static final String GLOBAL_KEY = SlotUtils.totalKey;

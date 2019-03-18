@@ -20,7 +20,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by daisy on 16/5/30.
+ * 
  */
 public class SlotComputeConfigUpdater {
     private static final Logger logger = LoggerFactory.getLogger(SlotComputeConfigUpdater.class);

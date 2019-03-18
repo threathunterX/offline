@@ -6,7 +6,7 @@ import com.threathunter.model.Event;
 import org.junit.Test;
 
 /**
- * Created by daisy on 17/3/25.
+ * 
  */
 public class EventVariableNodeTest {
     private final HttpDynamicEventMaker eventMaker = new HttpDynamicEventMaker(10);

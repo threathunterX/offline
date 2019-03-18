@@ -5,7 +5,7 @@ import com.threathunter.common.Identifier;
 import com.threathunter.variable.condition.DoublePropertyCondition;
 
 /**
- * Created by threathunter-dev on 16/5/23.
+ * 
  */
 public abstract class DoublePropertyConditionHandler implements PropertyConditionHandler {
     final double param;

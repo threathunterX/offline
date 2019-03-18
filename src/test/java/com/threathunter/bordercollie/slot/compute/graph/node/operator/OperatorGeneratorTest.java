@@ -7,7 +7,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.Assert.fail;
 
 /**
- * Created by yy on 17-12-14.
+ * 
  */
 public class OperatorGeneratorTest {
 

@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by daisy on 17/3/25.
+ * 
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(ByteArrayCacheStore.class)

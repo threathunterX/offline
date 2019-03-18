@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yy on 17-11-23.
+ * 
  */
 public class ResultFormatter {
     public static Map<String, Object> parse(long ts, Object value) {

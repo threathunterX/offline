@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by yy on 17-11-7.
+ * 
  */
 public class ITSlotEngineTest extends ITCommonBaseWithWindowChange {
     //V1:uid__visit_dynamic_count__1h__slot

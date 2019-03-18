@@ -6,7 +6,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * Created by yy on 17-11-15.
+ * 
  */
 public class ITSlotComputerManagerTest extends ITCommonBase {
     private static SlotComputeManager slotComputingManager;

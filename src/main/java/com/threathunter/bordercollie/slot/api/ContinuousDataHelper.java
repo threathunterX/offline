@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * Created by toyld on 2/13/17.
+ * 
  */
 public class ContinuousDataHelper implements DataConsumer {
     private static final Logger logger = LoggerFactory.getLogger(ContinuousDataHelper.class);
